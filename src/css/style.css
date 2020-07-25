@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Abel";
+  src: url("../fonts/Abel-Regular.ttf");
+}
+@font-face {
+  font-family: "Varela Round";
+  src: url("../fonts/VarelaRound-Regular.ttf");
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e4e4e4;
+  overflow-x: hidden;
+}
+
+.app .main {
+  color: black;
+}
+.app .main .header {
+  position: relative;
+  font-family: "Varela Round";
+  width: 100vw;
+  overflow: hidden;
+}
+@media (max-width: 576px) {
+  .app .main .header img {
+    height: 100vh;
+  }
+}
+@media (min-width: 576px) {
+  .app .main .header img {
+    width: 100%;
+  }
+}
+.app .main .header .texts {
+  position: absolute;
+  top: 30%;
+}
+.app .main .header .texts h1 {
+  color: #404040;
+  font-size: 4vmax;
+}
+.app .main .header .texts h5 {
+  color: #404040;
+  font-size: 2vmax;
+  margin-bottom: 40px;
+}
+.app .main .content {
+  font-family: "Abel";
+  font-size: 120%;
+}
+.app .main .content .content-section {
+  margin: 20px 0;
+  padding: 10px;
+  border-bottom: 2px solid #404040;
+}
+.app .main .content .content-section .image img {
+  width: 100%;
+}
+.app .main .content .content-section:nth-of-type(1) {
+  margin-top: 80px;
+}
+.app .main .icons {
+  background-color: #404040;
+  font-family: "Varela Round";
+}
+.app .main .icons .icon {
+  color: #D8DCDF;
+  margin: 20px 0;
+}
+.app .main .icons .icon .image {
+  font-size: 80px;
+  text-align: center;
+}
+.app .main .recommendations {
+  font-family: "Abel";
+  margin-bottom: 80px;
+}
+.app .main .recommendations .recomm {
+  margin: 20px 0;
+}
+.app .main .recommendations .recomm .image img {
+  width: 100%;
+  border-radius: 50%;
+}
+.app .main .recommendations .recomm .person {
+  margin-top: 16px;
+  text-align: center;
+  font-size: x-large;
+}
+.app .main .recommendations .recomm .text {
+  margin-top: 16px;
+  font-size: large;
+}
+.app .main .footer {
+  color: #D8DCDF;
+  background-color: #404040;
+  padding: 20px;
+  text-align: center;
+}
+.app .main .footer .info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.app .main .footer .brief {
+  margin-bottom: 20px;
+}
+.app .main .footer .questions {
+  margin-bottom: 20px;
+}
+.app .main .footer .questions span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.app .main .footer .links {
+  margin-bottom: 20px;
+}
+.app .main .footer .links span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button {
+  font-family: "Varela Round";
+  background-color: transparent;
+  border: 2px solid #404040;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 120px;
+  min-height: 40px;
+  transition: background-color 0.4s, color 0.4s;
+  color: #404040;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #404040;
+  color: #D8DCDF;
+}
+
+/*# sourceMappingURL=style.css.map */

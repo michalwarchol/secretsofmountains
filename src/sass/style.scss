@@ -1,0 +1,134 @@
+@import "_config.scss";
+@import "_utils.scss";
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #e4e4e4;
+    overflow-x: hidden;
+}
+.app{
+    .main{
+        color: black;
+        .header{
+            position: relative;
+            font-family: "Varela Round";
+            width: 100vw;
+            overflow: hidden;
+            img{
+                @media(max-width: 576px){
+                    height: 100vh;
+
+                }
+                @media(min-width: 576px){
+                    width: 100%;
+                }
+                
+            }
+            .texts{
+                position: absolute;
+                top: 30%;
+                h1{
+                    color: $color-2;
+                    font-size: 4vmax;
+                }
+                h5{
+                    color: $color-2;
+                    font-size: 2vmax;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .content{
+            font-family: "Abel";
+            font-size: 120%;
+            .content-section{
+                margin: 20px 0;
+                padding: 10px;
+                border-bottom: 2px solid $color-2;
+                .image{
+                    img{
+                        width: 100%;
+                    }
+                }
+                &:nth-of-type(1){
+                    margin-top: 80px;
+                }
+            }
+        }
+        .icons{
+            background-color: $color-2;
+            font-family: "Varela Round";
+            .icon{
+                color: $color-1;
+                margin: 20px 0;
+                .image{
+                    font-size: 80px;
+                    text-align: center;
+                }
+            }
+        }
+        .recommendations{
+            font-family: "Abel";
+            margin-bottom: 80px;
+            .recomm{
+                margin: 20px 0;
+                .image{
+                    img{
+                        width: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                .person{
+                    margin-top: 16px;
+                    text-align: center;
+                    font-size: x-large;
+                }
+                .text{
+                    margin-top: 16px;
+                    font-size: large;
+                }
+            }
+        }
+        .footer{
+            color: $color-1;
+            background-color: $color-2;
+            padding: 20px;
+            text-align: center;
+            .info{
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            .brief{
+                margin-bottom: 20px;
+            }
+            .questions{
+                @include link;
+                margin-bottom: 20px;
+            }
+            .links{
+                @include link;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+//global button properties
+.button{
+    font-family: "Varela Round";
+    background-color: transparent;
+    border: 2px solid $color-2;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 120px;
+    min-height: 40px;
+    transition: background-color 0.4s, color 0.4s;
+    color: $color-2;
+    &:hover{
+        background-color: $color-2;
+        color: $color-1;
+    }
+    cursor: pointer;
+}

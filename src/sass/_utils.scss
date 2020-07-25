@@ -1,0 +1,18 @@
+@font-face{
+    font-family: "Abel";
+    src: url("../fonts/Abel-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Varela Round";
+    src: url("../fonts/VarelaRound-Regular.ttf");
+}
+
+@mixin link{
+    span{
+        &:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
